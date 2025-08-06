@@ -41,78 +41,255 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>These are my<br />
-									Projects</h1>
-									<p></p>
-								
-							</section>
 						<!-- Posts -->
-						<section class="posts">
-							<article>
-								<header>
-									
-									<h2><a href="#">Advanced Hepatoma Staging<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images\Hepatoma_Poster.png" alt="" /></a>
-								<p>This project dives deep into Detection and Staging of Hepato Cellular Carcinoma. Established a multi-stage pipeline for the analysis of histopathological images of 
-									hepatocellular carcinoma by extracting relevant bio-markers.Techniques such as Stain Color Normalization, Data Augmentation and U-Net Segmentation were used. 
-									The results were tested across various features and boast a 20% increase in F1 scores compared to regular Deep learning models.
+						<!-- Machine Learning Projects -->
+<!-- Collapsible Projects Section: MACHINE LEARNING -->
+<section class="post">
+	<header class="major" style="text-align: center;">
+	  <h2>My Projects</h2>
+	  <p>Click a category to explore.</p>
+	</header>
+  
+	<!-- Accordion Button -->
+	<!-- Accordion Button -->
+<button onclick="toggleCollapse('ml-projects')" style="
+width: 100%;
+padding: 1em;
+font-size: 1.1em;
+background: #00bfa6;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+margin-bottom: 1em;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+letter-spacing: 1px;
+">
+<span style="margin-right: 0.5em;">🔍</span> MACHINE LEARNING PROJECTS
+</button>
+  
+	<!-- Hidden Collapsible Content -->
+	<div id="ml-projects" style="display: none; flex-direction: column; gap: 2.5em; max-width: 800px; margin: 0 auto;">
+  
+	  <!-- Most recent first -->
+  
+	  <!-- Hepatoma Staging -->
+	  <div style="display: flex; align-items: flex-start; gap: 1em;">
+		<div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+		<div>
+		  <h3 style="margin:0; color:#000;">Hepatoma Staging Pipeline</h3>
+		  <p style="margin:0.3em 0 0; color:#333;">
+			Constructed an end‑to‑end deep learning pipeline to stage hepatocellular carcinoma using histopathological images. Included segmentation, Stain Colour Normalization, biomarker extraction, and achieved 20% F1 improvement.
+		  </p>
+		  <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, Tensorflow, PyTorch, CellProfiler</p>
+		  <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/Hepatoma-Staging-Project" class="button small">GitHub</a></p>
+		</div>
+	  </div>
+  
+	  <!-- Medical GANs -->
+	  <div style="display: flex; align-items: flex-start; gap: 1em;">
+		<div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+		<div>
+		  <h3 style="margin:0; color:#000;">GAN Fingerprint Detection (ImageCLEF 2023)</h3>
+		  <p style="margin:0.3em 0 0; color:#333;">
+			Built similarity‑based and autoencoder methods to detect whether real medical CT scans were used to generate synthetic GAN images. Ranked 9th Globally.
+		  </p>
+		  <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, PyTorch</p>
+		  <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/ImageCLEFmedical-gan-2023" class="button small">GitHub</a></p>
+		</div>
+	  </div>
+  
+	  <!-- Medical Captioning -->
+	  <div style="display: flex; align-items: flex-start; gap: 1em;">
+		<div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+		<div>
+		  <h3 style="margin:0; color:#000;">Medical Captioning (ImageCLEF 2023)</h3>
+		  <p style="margin:0.3em 0 0; color:#333;">
+			Developed a gradient-boosted ensemble + deep learning system for concept detection and caption prediction on radiology images. Ranked 7th globally.
+		  </p>
+		  <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, TensorFlow, UMLS concept mapping</p>
+		  <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/ImageCLEF_medical-captioning-2023" class="button small">GitHub</a></p>
+		</div>
+	  </div>
+  
+	  <!-- FungiCLEF -->
+	  <div style="display: flex; align-items: flex-start; gap: 1em;">
+		<div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+		<div>
+		  <h3 style="margin:0; color:#000;">FungiCLEF (Fungal Species Recognition)</h3>
+		  <p style="margin:0.3em 0 0; color:#333;">
+			Designed a multi-model ensemble to classify fungal species from microscopic images. Top-tier performance in CLEF‑2022 FungiCLEF.
+		  </p>
+		  <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, Tensorflow</p>
+		  <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/FungiCLEF-2022-using-Network-Ensembles" class="button small">GitHub</a></p>
+		</div>
+	  </div>
+  
+	  <!-- SnakeCLEF -->
+	  <div style="display: flex; align-items: flex-start; gap: 1em;">
+		<div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+		<div>
+		  <h3 style="margin:0; color:#000;">SnakeCLEF (Species Classification)</h3>
+		  <p style="margin:0.3em 0 0; color:#333;">
+			Built an ensemble of convolutional networks to classify snake species from images. Ranked top 10 globally at CLEF‑2022 SnakeCLEF task.
+		  </p>
+		  <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, PyTorch, Tree‑based ensemble</p>
+		  <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/SnakeCLEF-2022-using-Network-Ensembles" class="button small">GitHub</a></p>
+		  <p></p>
+		</div>
+	  </div>
+  
+	</div>
+	<!-- Accordion Button -->
+<button onclick="toggleCollapse('web-projects')" style="
+width: 100%;
+padding: 1em;
+font-size: 1.1em;
+background: #00bfa6;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+margin-bottom: 1em;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+letter-spacing: 1px;
+">
+<span style="margin-right: 0.5em;">🖥️</span> WEB DEVELOPMENT & MLOPS PROJECTS
+</button>
 
-									<br/>Tech stack: Python, Cell Profiler
-								</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/Haricharan0311/Hepatoma-Staging-Project" class="button">Github</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									
-									<h2><a href="#">Google Data-Analysis<br />
-									Capstone project</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images\google_project_tableau.png" alt="" /></a>
-								<p>Leveraged Data Analysis to parse a Cycle Company's Data and suggested Effective Marketing Strategies to increase customer response with visuals plots and charts.
-									The following is a culmination of the 8 course specialisation for the Google Data Analysis course
-									<br/>Tech stack: Python, R, Tableau
-								</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/Haricharan0311/Google-Data-Analytics-Capstone-Project" class="button">Github</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<h2><a href="#">HAART<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images\haart_sample.jpeg" alt="" /></a>
-								<p>This is an E-commerce platform for artisans and seperate logins for admin and artisans done as a part of my end semester project for Web Dev laboratory
-									<br/>Tech Stack: ReactJS, NodeJS, MongoDB, HTML, CSS
-								</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/Haricharan0311/haart" class="button">Github</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									
-									<h2><a href="#">Pet projects<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images\git.png" alt="" /></a>
-								<p>These are a few pet projects that i started out learning Computer Science with in my high school and hold a special place in my heart. The projects are Railway management and Hotel management systems
-									<br/>Tech Stack: C++, Java
-								</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/Haricharan0311/Projects-for-Fun-" class="button">Github</a></li>
-								</ul>
-							</article>
-							
-						</section>
-					</div>
+<div id="web-projects" style="display: none; flex-direction: column; gap: 2.5em; max-width: 800px; margin: 0 auto;">
+  
+	<!-- Most recent first -->
+
+	<!-- Hepatoma Staging -->
+	<div style="display: flex; align-items: flex-start; gap: 1em;">
+	  <div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+	  <div>
+		<h3 style="margin:0; color:#000;">WolfJobs</h3>
+		<p style="margin:0.3em 0 0; color:#333;">
+			Built a job and resume matching platform for NC State students, incorporating AI-based skill extraction and job ranking.
+			Designed a responsive UI with React and Tailwind, and a backend with Node.js, MongoDB, and Flask.
+			Integrated JWT-based authentication and scalable search.
+		</p>
+		<p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, CellProfiler, U-Net, Ensemble learning</p>
+		<p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/Hepatoma-Staging-Project" class="button small">GitHub</a></p>
+	  </div>
+	</div>
+
+	<!-- Medical GANs -->
+	<div style="display: flex; align-items: flex-start; gap: 1em;">
+	  <div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+	  <div>
+		<h3 style="margin:0; color:#000;">VOGUEX</h3>
+		<p style="margin:0.3em 0 0; color:#333;">
+			Developed an ML-powered fashion recommendation engine using DenseNet for feature extraction.
+			Implemented features like login/signup, product reviews, and an image-based search interface with Flask backend and SQLite storage.
+		</p>
+		<p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, Autoencoders, SSIM, Patch-based methods</p>
+		<p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/ImageCLEFmedical-gan-2023" class="button small">GitHub</a></p>
+	  </div>
+	</div>
+
+	<!-- Medical Captioning -->
+	<div style="display: flex; align-items: flex-start; gap: 1em;">
+	  <div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+	  <div>
+		<h3 style="margin:0; color:#000;">HAART</h3>
+		<p style="margin:0.3em 0 0; color:#333;">
+			Designed and deployed a full-stack web application for anomaly detection in heart rate data using time series classification.
+			Built a Grafana-based dashboard for real-time monitoring and alerts, fully containerized with Docker.</p>
+		<p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, TensorFlow, XGBoost, UMLS concept mapping</p>
+		<p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/ImageCLEF_medical-captioning-2023" class="button small">GitHub</a></p>
+		<p></p>
+	  </div>
+	</div>
+
+
+
+  </div>
+  <button onclick="toggleCollapse('analytics-projects')" style="
+width: 100%;
+padding: 1em;
+font-size: 1.1em;
+background: #00bfa6;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+margin-bottom: 1em;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+letter-spacing: 1px;
+">
+<span style="margin-right: 0.5em;">📊</span> ANALYTICS & MISC PROJECTS
+</button>
+
+<div id="analytics-projects" style="display: none; flex-direction: column; gap: 2.5em; max-width: 800px; margin: 0 auto;">
+
+  <!-- Google Capstone -->
+  <div style="display: flex; align-items: flex-start; gap: 1em;">
+    <div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+    <div>
+      <h3 style="margin:0; color:#000;">Google Data Analytics Capstone</h3>
+      <p style="margin:0.3em 0 0; color:#333;">
+        Analyzed customer data from a bike-share company to derive actionable marketing insights.
+        Cleaned and transformed 12M+ rows using R, visualized usage trends in Tableau, and delivered strategic recommendations.
+      </p>
+      <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> R, Python, Tableau</p>
+      <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/Google-Data-Analytics-Capstone-Project" class="button small">GitHub</a></p>
+    </div>
+  </div>
+
+  <!-- QFC -->
+  <div style="display: flex; align-items: flex-start; gap: 1em;">
+    <div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+    <div>
+      <h3 style="margin:0; color:#000;">Quantitative Funding Curve (QFC)</h3>
+      <p style="margin:0.3em 0 0; color:#333;">
+        A Monte Carlo backtesting engine for shorting strategies on Hyperliquid using historical candlestick data.
+Optimizes entry/exit conditions across millions of parameter combinations to maximize portfolio returns.
+      </p>
+      <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, Hyperliquid API</p>
+      <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/QFC" class="button small">GitHub</a></p>
+    </div>
+  </div>
+
+  <!-- Pet Projects -->
+  <div style="display: flex; align-items: flex-start; gap: 1em;">
+    <div style="min-width: 10px; height: 10px; background:#00bfa6; border-radius:50%; flex-shrink:0; margin-top:6px;"></div>
+    <div>
+      <h3 style="margin:0; color:#000;">Pet Projects (High School)</h3>
+      <p style="margin:0.3em 0 0; color:#333;">
+        A collection of beginner-level fun projects including a Discord bot, a Railway and a Hotel Management System. (My First few projects in High School !!)
+      </p>
+      <p style="margin:0.3em 0 0; color:#555;"><strong>Tech stack:</strong> Python, C++, Java, JavaScript, APIs</p>
+      <p style="margin:0.3em 0 0;"><a href="https://github.com/Haricharan0311/Projects-for-Fun-" class="button small">GitHub</a></p>
+	  <p></p>
+    </div>
+  </div>
+
+</div>
+
+
+  </section>
+  
+  
+  <script>
+	function toggleCollapse(id) {
+	  const el = document.getElementById(id);
+	  el.style.display = el.style.display === 'none' ? 'flex' : 'none';
+	}
+  </script>
+  
+x  
 
 				<!-- Footer -->
 				<footer id="footer">
